@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <i class="fa-brands fa-apple"></i>
+            <div class="header-texts">
+                <a href="#" class="header-text">MAC</a>
+                <a href="#" class="header-text">iPad</a>
+                <a href="#" class="header-text">iPhone</a>
+                <a href="#" class="header-text">Watch</a>
+                <a href="#" class="header-text">TV</a>
+            </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#" class="texts-header1">MAC</a>
+                    <a href="#" class="texts-header">iPad</a>
+                    <a href="#" class="texts-header">iPhone</a>
+                    <a href="#" class="texts-header">Watch</a>
+                    <a href="#" class="texts-header">TV</a>
+                </div>
+            </div>
+            <span class="disp" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+
+            <div class="header-icons">
+                <a href="#">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#" style="width: 50px;"> 
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </header>
+        <div class="box-flex">
+            <div class="info-texts">
+                <p class="info-text1">
+                    The most advsnced Apple Watch yet.
+                </p>
+                <p class="info-text2">In all the latest looks.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <img src="image.png" alt="/" class="imagess">
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "50%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>
